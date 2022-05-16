@@ -5,15 +5,13 @@
     "baseUrl": "./",
     "moduleResolution": "node",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]
     },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+    "jsx": "preserve"
+  },
+  // строчки ниже добавляю чтобы не было ошибок template
+  "vueCompilerOptions": {
+    "experimentalDisableTemplateSupport": true
   }
 }
